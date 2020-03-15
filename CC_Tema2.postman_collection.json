@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "e98e3926-67e9-4190-b56c-649ff8a1e287",
+		"name": "CC_Tema2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET one entity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/apiCall.php/entities/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"apiCall.php",
+						"entities",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE one entity",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8001/apiCall.php/entities/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"apiCall.php",
+						"entities",
+						"9"
+					]
+				},
+				"description": "Id has to be valid"
+			},
+			"response": []
+		},
+		{
+			"name": "POST one entity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Andrei",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Popa",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "187",
+							"type": "text"
+						},
+						{
+							"key": "telephone",
+							"value": "0742298945",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "andrei.popa@yahoo.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/apiCall.php/entities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"apiCall.php",
+						"entities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT one entity",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Andreea",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Ionescu",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "160",
+							"type": "text"
+						},
+						{
+							"key": "telephone",
+							"value": "0745542311",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "andreea.ionescu@yahoo.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/apiCall.php/entities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"apiCall.php",
+						"entities"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
